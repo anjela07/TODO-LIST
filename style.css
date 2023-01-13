@@ -1,0 +1,156 @@
+body {
+  margin: 0 auto;
+  background-image: url(https://img3.akspic.ru/previews/2/7/5/6/6/166572/166572-svet-chernyy-astronomicheskij_obekt-art-liniya-x750.jpg);
+  background-size: 100%;
+  background-repeat: initial;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+}
+h1 {
+    top: 60px;
+    font-weight: bold;
+  font-size: 50px;
+  color: violet;
+  font-family:Stencil Std, fantasy;
+  font-style: italic;
+    text-shadow: 2px 3px 7px rgb(253, 249, 253);
+    margin-left: 130px;
+}
+/* em, rem = 16px */
+.mainBlock {
+  width: 800px;
+  margin-bottom: 2em;
+  margin-left: 3em;
+  margin-right: 3em;
+  padding-top: 3em;
+  padding-bottom: 2em;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 70px;
+  flex-wrap: wrap;
+  
+}
+.mainBlock:hover{
+  box-shadow: 0px 0px 10px 6px rgb(248, 117, 242);
+  transition: 3s;
+}
+.taskItem {
+  font-weight: 600;
+  color:rgb(126, 6, 126);
+  background-color: rgb(233, 158, 240);
+  border-radius: 10px;
+  font-style: italic;
+}
+@media (max-width: 600px) {
+  body {
+    background-size: cover;
+    background-repeat: initial;
+    background-image: url(https://img3.akspic.ru/previews/2/7/5/6/6/166572/166572-svet-chernyy-astronomicheskij_obekt-art-liniya-x750.jpg);
+  }
+  .container {
+    margin: 0 auto;
+    display: flex;
+    width: 200px;
+  }
+  .mainBlock {
+    display: flex;
+    height: auto;
+    width: 350px;
+    padding: 15px;
+    padding-bottom: 10px;
+    padding-right: -10px;
+  }
+  .mainBlock:hover{
+    box-shadow: 0px 0px 10px 6px rgb(248, 117, 242);
+    transition: 3s;
+  }
+  body {
+    width: 400px;
+  }
+  .form {
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr;
+    height: auto;
+    width: auto;
+    flex-direction: row;
+  }
+  #id {
+    display: grid;
+  }
+  .textIn {
+    margin-right: -150px;
+    background-color: rgb(221, 128, 245);
+  }
+  .taskItem {
+    margin-left: -20px;
+    font-weight: 600;
+    margin-top: -20px;
+    width: 330px;
+    color: black;
+    text-shadow: 0px 0px 3px rgb(253, 251, 253);
+  }
+  .second {
+    margin-top: 50px;
+    margin-left: -200px;
+    margin-bottom: -10px;
+    margin-right: -10px;
+  
+  }
+  #addBtn {
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: -10px;
+    margin-right: 1px;
+    margin-left: 25px;
+    color: rgb(144, 13, 170);
+    border-radius: 10px;
+  }
+}
+.form {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-column-gap: 5px;
+  opacity: 1;
+ 
+}
+li {
+  display: grid;
+  grid-template-columns: 7fr 1fr 1fr;
+  margin-bottom: 10px;
+}
+.textIn {
+  height: 2em;
+  text-align: center;
+  opacity: 1;
+}
+input,
+button {
+  outline: none;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  border-radius: 5px;
+  color: rgb(117, 8, 150);
+}
+.task {
+  display: grid;
+  grid-template-columns: 10fr 5fr 7fr;
+  margin-top: 15px;
+  text-decoration: dashed;
+  font-style: italic;
+
+
+}
+.done {
+  text-decoration: line-through;
+  color: rgb(17, 17, 17);
+}
+
